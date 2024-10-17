@@ -324,9 +324,9 @@ background-color: #404bbf
   gap: 24px;
 }
 
-.social-list-item {
-  width: 40px !important;
-  height: 40px !important;
+.social-item {
+  width: 40px;
+  height: 40px;
 }
 
 .social-link {
