@@ -351,8 +351,6 @@ background-color: #404bbf
   background-color: #404bbf;
 }
 
-
-
 .team-member-name {
   font-weight: 500;
   font-size: 20px;
@@ -421,6 +419,58 @@ background-color: #404bbf
 .portfolio-item {
   width: calc((100% - 48px) / 3);
   box-sizing: border-box;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  /* Тінь при ховері */
+}
+
+.img-container {
+  position: relative;
+  /* Встановлює позиціонування */
+  overflow: hidden;
+  /* Приховує контент за межами контейнера */
+}
+
+.portfolio-description {
+  position: absolute;
+  /* Встановлює позицію елемента */
+  top: 0;
+  /* Зміщує до верхньої межі контейнера */
+  font-size: 16px;
+  /* Розмір шрифту */
+  line-height: 1.5;
+  /* Простір між рядками */
+  letter-spacing: 0.02em;
+  /* Відстань між літерами */
+  color: var(--text-color, #f4f4fd);
+  /* Колір тексту з css змінної */
+  padding: 40px 32px;
+  /* Відступи */
+  background-color: #4d5ae5;
+  /* Колір фону */
+  height: 100%;
+  /* Висота на 100% */
+  width: 100%;
+  /* Ширина на 100% */
+  transform: translateY(100%);
+  /* Зміщення */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* Анімаційний ефект */
+}
+
+.portfolio-item:hover .portfolio-description {
+  transform: translateY(0%);
+  /* Зміна позиції при ховері */
+}
+
+.portfolio-description {
+  margin: 0;
+  /* Скидає відступи */
 }
 
 .portfolio-item-category {
