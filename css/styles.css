@@ -486,19 +486,31 @@ background-color: #404bbf
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-    /* Додає простір між елементами */
-  }
+  align-items: baseline;
+ 
+}
 
-    .footer-container {
-      display: flex;
-      flex-direction: column;
-      /* Логотип і текст вертикально */
-      align-items: flex-start;
-      /* Вирівнювання вліво */
-      margin-right: 120px;
-    }
+.footer-content {
+  display: flex;
+  align-items: baseline;
+   
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 120px;
+}
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -510,19 +522,6 @@ background-color: #404bbf
   color: #4d5ae5;
   margin-bottom: 16px;
   display: block;
-  display: inline-block;
-  
-}
-
-.footer-logo-white {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #f4f4fd;
-  
 }
 
 .footer-text {
@@ -536,10 +535,8 @@ background-color: #404bbf
 
 .socials-container {
   display: flex;
-    flex-direction: column;
-    /* Вертикальне вирівнювання */
-    align-items: center;
-    /* Центрування по горизонталі */
+  flex-direction: column;
+  align-items: center;
 }
 
 .socials-text {
@@ -548,7 +545,6 @@ background-color: #404bbf
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white-color, #FFFFFF);
-  /* Використовує змінну для кольору */
   margin-bottom: 16px;
 }
 
@@ -580,10 +576,13 @@ background-color: #404bbf
 
 .social-link svg {
   fill: var(--white-color, #f4f4fd);
-  /* Задає колір іконки */
 }
 
 .social-link svg use {
-  href: "";
-  /* Приклад, куди посилатися на спрайт іконок */
-}
+      href: "./images/icons.svg#icon-instagram";
+      href: "./images/icons.svg#icon-twitter";
+      href: "./images/icons.svg#icon-facebook";
+      href: "./images/icons.svg#icon-linkedin";
+    }
+  
+    
