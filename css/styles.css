@@ -346,10 +346,14 @@ background-color: #404bbf
   fill: var(--icon-color, #f4f4fd);
 }
 
-.social-link:hover,
+.social-link:hover {
+  background-color: #404bbf;
+}
+
 .social-link:focus {
   background-color: #404bbf;
 }
+
 
 .team-member-name {
   font-weight: 500;
