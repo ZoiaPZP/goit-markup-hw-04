@@ -554,7 +554,7 @@ background-color: #404bbf
 
 .social-link:hover,
 .social-link:focus {
-  fill: #31d0aa;
+  background-color: #31d0aa;
 }
 
 .social-link svg {
@@ -567,10 +567,7 @@ background-color: #404bbf
   transition: fill 0.3s;
 }
 
-.social-link:hover svg,
-.social-link:focus svg {
-  fill: #31d0aa;
-}
+
 
 
   
