@@ -497,6 +497,7 @@ background-color: #404bbf
       /* Логотип і текст вертикально */
       align-items: flex-start;
       /* Вирівнювання вліво */
+      margin-right: 120px;
     }
 
 .footer-logo {
