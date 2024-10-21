@@ -488,7 +488,6 @@ background-color: #404bbf
    
 }
 
-
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -555,18 +554,24 @@ background-color: #404bbf
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #31d0aa;
+  fill: #31d0aa;
 }
 
 .social-link svg {
+  width: 24px;
+  height: 24px;
   fill: var(--white-color, #f4f4fd);
 }
 
-.social-link svg use {
-      href: "./images/icons.svg#icon-instagram";
-      href: "./images/icons.svg#icon-twitter";
-      href: "./images/icons.svg#icon-facebook";
-      href: "./images/icons.svg#icon-linkedin";
-    }
+.social-link svg.use {
+  transition: fill 0.3s;
+}
+
+.social-link:hover svg,
+.social-link:focus svg {
+  fill: #31d0aa;
+}
+
+
   
     
