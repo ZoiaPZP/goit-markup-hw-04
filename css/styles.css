@@ -427,14 +427,15 @@ background-color: #404bbf
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.img-container {
+.portfolio-cover-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-description {
+.portfolio-cover-text {
   position: absolute;
   top: 0;
+  left: 0;
   font-size: 16px;
   line-height: 1.5; 
   letter-spacing: 0.02em;
@@ -447,14 +448,10 @@ background-color: #404bbf
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover.portfolio-description {
+.portfolio-item:hover .portfolio-cover-text {
   transform: translateY(0%);
 }
 
-.portfolio-description {
-  margin: 0;
- 
-}
 
 .portfolio-item-category {
   font-size: 16px;
